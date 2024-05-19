@@ -1,6 +1,6 @@
-How to initialise a Spring-Boot java project.
+How to initialize a Spring-Boot java project.
 
-1. Initialise project using Maven:
+1. Initialize project using Maven:
 
 - Make sure you have Apache Maven 3.6.3 or later installed. If not, you can install it using your package manager (e.g., brew install maven on macOS or sudo apt-get install maven on Ubuntu). Verify installation with `mvn --version`.
 - Create a new Maven project by running the following command:
