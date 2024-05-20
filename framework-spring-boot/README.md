@@ -7,4 +7,9 @@ Steps to create a new spring-boot project:
    
 2. Use ```cd my-app```, then use ```tree```from terminal to check the folder tree.
 
-3. 
+3. Use ```mvn package``` to build the project, create and compile the JAR file.
+  
+5. Run the JAR with:
+   ```
+java -cp target/my-app-1.0-SNAPSHOT.jar com.mycompany.app.App
+   ```
