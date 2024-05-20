@@ -1,4 +1,4 @@
-Steps to create a new spring-boot project:
+Steps to create a new Java project with Maven, from terminal:
 
 1. Use Maven to create the project structure:
    ```
