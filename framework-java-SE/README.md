@@ -1,33 +1,30 @@
-How to initialize a java project.
+Steps to create a new Java project with Maven, from terminal:
 
-1. Initialize project using Maven (also [here](https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html)):
+1. Use Maven to create the project structure:
+   ```
+   mvn archetype:generate -DgroupId=com.mycompany.app -DartifactId=my-app -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.4 -DinteractiveMode=false
+   ```
+2. Use `cd my-app`, then use `tree`from terminal to check the folder tree.
 
-- Make sure you have Apache Maven 3.6.3 or later installed. If not, you can install it using your package manager (e.g., brew install maven on macOS or sudo apt-get install maven on Ubuntu). Verify installation with `mvn --version`.
-- Create a new Maven project by running the following command:
+3. Build the project, create and compile the JAR file with:
 
-  ```
-  mvn archetype:generate -DgroupId=com.mycompany.app -DartifactId=my-app -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
-  ```
+   ```
+   mvn package
+   ```
 
-  Replace com.mycompany.app with your desired group ID and my-app with your project’s name.
+4. Run the JAR with:
 
+   ```
+   java -cp target/my-app-1.0-SNAPSHOT.jar com.mycompany.app.App
+   ```
 
-2. Add dependencies inside pom.xml file, the following is an example.
-
-```
-  <dependencies>
+5. Add dependencies to the pom-xml file like so:
+   ```
     <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>3.8.1</version>
-      <scope>test</scope>
+      <groupId>log4j</groupId>
+      <artifactId>log4j</artifactId>
+      <version>1.2.12</version>
+      <scope>compile</scope>
     </dependency>
-  </dependencies>
-```
-
-3. Start coding inside scr folder. Assuming App.java is inside scr, use the following to compile and run.
-
-```
-javac App.java
-java App
-```
+   ```
+   Then use `mvn compile` for have Maven install them.
