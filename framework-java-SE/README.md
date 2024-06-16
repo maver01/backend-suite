@@ -12,6 +12,7 @@ Steps to create a new Java project with Maven, from terminal:
    mvn package
    ```
 
+The project is now ready to be executed.
 4. Run the JAR with:
 
    ```
