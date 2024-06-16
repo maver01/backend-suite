@@ -21,7 +21,7 @@ Setup MySQL:
 7. Access MySQL shell as the root user:
    `sudo mysql -u root -p`
    Input password created in previous point, or press ENTER if none was created.
-8. Create a user and create a password they can use to access database:
+8. Create a user (user-name-v1) and create a password (test1234) they can use to access database:
    `CREATE USER 'user-name-v1'@'localhost' IDENTIFIED BY 'test1234';`
 9. Exit:
    `exit`
