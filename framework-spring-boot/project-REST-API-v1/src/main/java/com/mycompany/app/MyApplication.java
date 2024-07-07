@@ -2,8 +2,11 @@
 
 package com.mycompany.app;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -17,6 +20,10 @@ import org.springframework.web.bind.annotation.RestController;
  * so Spring considers it when handling incoming web requests.
  */
 @RestController
+/*
+ * Update cors policy for testing
+ */
+@CrossOrigin(origins = "http://localhost:3000")
 /*
  * The second class-level annotation is @SpringBootApplication.
  * This annotation is known as a meta-annotation, it combines
@@ -48,10 +55,13 @@ public class MyApplication {
         SpringApplication.run(MyApplication.class, args);
     }
 
+    private static final Logger logger = LoggerFactory.getLogger(MyApplication.class);
+
     @PostMapping("/data")
     public MyData postData(@RequestBody MyData data) {
         // Process the data as needed
-        // For now, just return it
+        // For now, just log it and return it
+        logger.info("Received data: " + data);
         return data;
     }
 
