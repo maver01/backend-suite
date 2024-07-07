@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.brightflore-solutions.app.AppTest" time="0.014" tests="1" errors="1" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/home/maver02/Projects/Infrastructure_suite_project/Development/backend-suite/framework-spring-boot/project-spring-boot-hello-world/target/test-classes:/home/maver02/Projects/Infrastructure_suite_project/Development/backend-suite/framework-spring-boot/project-spring-boot-hello-world/target/classes:/home/maver02/.m2/repository/junit/junit/4.11/junit-4.11.jar:/home/maver02/.m2/repository/org/hamcrest/hamcrest-core/2.2/hamcrest-core-2.2.jar:/home/maver02/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:"/>
+    <property name="java.vm.vendor" value="Ubuntu"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://ubuntu.com/"/>
+    <property name="os.name" value="Linux"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-17-openjdk-amd64/lib"/>
+    <property name="sun.java.command" value="/home/maver02/Projects/Infrastructure_suite_project/Development/backend-suite/framework-spring-boot/project-spring-boot-hello-world/target/surefire/surefirebooter15172187375503868719.jar /home/maver02/Projects/Infrastructure_suite_project/Development/backend-suite/framework-spring-boot/project-spring-boot-hello-world/target/surefire 2024-07-07T12-54-04_157-jvmRun1 surefire9541266713514551337tmp surefire_016755859912921016198tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/home/maver02/Projects/Infrastructure_suite_project/Development/backend-suite/framework-spring-boot/project-spring-boot-hello-world/target/test-classes:/home/maver02/Projects/Infrastructure_suite_project/Development/backend-suite/framework-spring-boot/project-spring-boot-hello-world/target/classes:/home/maver02/.m2/repository/junit/junit/4.11/junit-4.11.jar:/home/maver02/.m2/repository/org/hamcrest/hamcrest-core/2.2/hamcrest-core-2.2.jar:/home/maver02/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/home/maver02"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-04-16"/>
+    <property name="java.home" value="/usr/lib/jvm/java-17-openjdk-amd64"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/home/maver02/Projects/Infrastructure_suite_project/Development/backend-suite/framework-spring-boot/project-spring-boot-hello-world"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="/home/maver02/Projects/Infrastructure_suite_project/Development/backend-suite/framework-spring-boot/project-spring-boot-hello-world/target/surefire/surefirebooter15172187375503868719.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.11+9-Ubuntu-122.04.1"/>
+    <property name="user.name" value="maver02"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="6.5.0-41-generic"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="localRepository" value="/home/maver02/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://bugs.launchpad.net/ubuntu/+source/openjdk-17"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="java.version" value="17.0.11"/>
+    <property name="user.dir" value="/home/maver02/Projects/Infrastructure_suite_project/Development/backend-suite/framework-spring-boot/project-spring-boot-hello-world"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Ubuntu"/>
+    <property name="java.vm.version" value="17.0.11+9-Ubuntu-122.04.1"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="shouldAnswerWithTrue" classname="com.brightflore-solutions.app.AppTest" time="0.002">
+    <error message="Unresolved compilation problems: &#10;	The declared package &quot;com.brightflore&quot; does not match the expected package &quot;com.brightflore-solutions.app&quot;&#10;	Syntax error on token &quot;-&quot;, . expected&#10;" type="java.lang.Error"><![CDATA[java.lang.Error: 
+Unresolved compilation problems: 
+	The declared package "com.brightflore" does not match the expected package "com.brightflore-solutions.app"
+	Syntax error on token "-", . expected
+
+	at com.brightflore-solutions.app.AppTest.<init>(AppTest.java:1)
+]]></error>
+  </testcase>
+</testsuite>
