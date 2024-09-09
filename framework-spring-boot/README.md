@@ -37,3 +37,14 @@ public class MyApplication {
 
 }
 ```
+
+To add springboot dependencies without adding each version, you can add springboot parent to the `pom.xml`, with the most recent springboot version available in the main springboot website:
+```
+  <!-- Add Spring Boot Parent -->
+  <parent>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-parent</artifactId>
+      <version>3.3.3</version> <!-- Use the appropriate Spring Boot version -->
+      <relativePath/> <!-- Lookup parent from repository -->
+  </parent>
+```
